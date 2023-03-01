@@ -9,7 +9,9 @@ https://user-images.githubusercontent.com/84595830/222260506-44b1e7a2-47ab-4926-
 ### Usage
 
 ### Add BrowserAnimationsModule
-Add `BrowserAnimationsModule` to your `app.module.ts` (make sure only one is referenced in your app)
+To allow animations to work make sure `BrowserAnimationsModule` is to your `app.module.ts`:
+(make sure only one instance is referenced in your app)
+
 ```typescript
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 ...
@@ -24,7 +26,7 @@ imports: [... BrowserAnimationsModule],
 
 Copy the [`sheet-modal`](./src/app/sheet-modal) folder into your project.
 
-Add to your module:
+Add to your page's module:
 ```typescript
 import { SheetModalModule } from '../sheet-modal/sheet-modal.module';
 ...
@@ -37,8 +39,9 @@ import { SheetModalModule } from '../sheet-modal/sheet-modal.module';
 });
 ```
 
-
+### Use on your page
 Place just underneath `<ion-content>`:
+
 ```html
 <app-sheet-modal [isOpen]="showToday">
     <div class="my-content">
@@ -47,4 +50,4 @@ Place just underneath `<ion-content>`:
   </app-sheet-modal>
   ```
 
-The `isOpen` property will default to `false`. When changed will trigger an animation.
+The `isOpen` property will default to `false`. When it is changed it will trigger an animation.
