@@ -4,7 +4,7 @@ This is a custom component that acts like a sheet modal but can be placed on an 
 
 ### Usage
 
-Copy the `sheet-modal` folder into your project.
+Copy the []`sheet-modal`](./src/app/sheet-modal) folder into your project.
 
 Add to your module:
 ```typescript
