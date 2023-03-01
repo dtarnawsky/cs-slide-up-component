@@ -4,7 +4,7 @@
       Home
     </ion-title>
     <ion-buttons slot="end">
-      <ion-button>Today</ion-button>
+      <ion-button [fill]="showToday ? 'solid' : 'clear'" (click)="showToday = !showToday">Today</ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -15,6 +15,27 @@
       <ion-title size="large">Home</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <!-- This is the sheet modal that will appear when the "today" button is clicked -->
+  <app-sheet-modal [isOpen]="showToday">
+    <div class="card-list">
+      <div class="card">Segment Card</div>
+      <div class="card">Segment Card</div>
+      <div class="card">Segment Card</div>
+      <div class="card">Station Card</div>
+      <div class="card">Station Alert</div>
+      <div class="card">Station News</div>
+      <div class="card"> <p *ngFor="let card of cards">Everything in this green panel is the content inside the app-sheet-modal component.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.</p></div>
+    </div>
+  </app-sheet-modal>
+
+
+
 
   <ion-card *ngFor="let card of cards">
     <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />

@@ -7,8 +7,11 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  cards = [1,2,3,4,5,6];
-  
+
+  showToday = false; // Whether to show or hide the sheet modal component
+
+  cards = [1,2,3,4,5,6]; // Some data for our home page
+
   constructor() {}
 
 }
