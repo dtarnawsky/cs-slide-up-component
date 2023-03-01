@@ -2,6 +2,10 @@
 
 This is a custom component that acts like a sheet modal but can be placed on an `ion-content` and will sit behind tabs. It uses [@angular/animations](https://angular.io/guide/animations) to slide up/down based on its `isOpen` property.
 
+
+https://user-images.githubusercontent.com/84595830/222260506-44b1e7a2-47ab-4926-b8a7-2b0d5a4bffa8.mp4
+
+
 ### Usage
 
 ### Add BrowserAnimationsModule
