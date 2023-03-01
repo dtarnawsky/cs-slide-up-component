@@ -1,6 +1,6 @@
 # sheet modal
 
-This is a custom component that acts like a sheet modal but can be placed on an `ion-content` and will site behind tabs.
+This is a custom component that acts like a sheet modal but can be placed on an `ion-content` and will sit behind tabs. It uses [@angular/animations](https://angular.io/guide/animations) to slide up/down based on its `isOpen` property.
 
 ### Usage
 
