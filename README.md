@@ -4,21 +4,7 @@ This is a custom component that acts like a sheet modal but can be placed on an 
 
 ### Usage
 
-Copy the [`sheet-modal`](./src/app/sheet-modal) folder into your project.
-
-Add to your module:
-```typescript
-`import { SheetModalModule } from '../sheet-modal/sheet-modal.module';`
-...
-@NgModule({
-  imports: [
-...
-    SheetModalModule
-  ],
-...
-});
-```
-
+### Add BrowserAnimationsModule
 Add `BrowserAnimationsModule` to your `app.module.ts` (make sure only one is referenced in your app)
 ```typescript
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -29,6 +15,24 @@ imports: [... BrowserAnimationsModule],
 ...
 });
 ```
+
+### Add sheet-modal
+
+Copy the [`sheet-modal`](./src/app/sheet-modal) folder into your project.
+
+Add to your module:
+```typescript
+import { SheetModalModule } from '../sheet-modal/sheet-modal.module';
+...
+@NgModule({
+  imports: [
+...
+    SheetModalModule
+  ],
+...
+});
+```
+
 
 Place just underneath `<ion-content>`:
 ```html
